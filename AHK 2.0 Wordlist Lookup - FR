@@ -1,10 +1,10 @@
 /*
 Requires AHK 2.0
-With wordlist in clipboard, invoke the script via:
+With a French wordlist in clipboard, invoke the script via:
 Control + alt + c for cnrtl
 Control + alt + w for Wordreference
 Control + alt + g for Google search.
-Diacritics handled smoothly with the EncodoeDecode functions, the key to it all.
+Diacritics handled via the EncodoeDecode functions.
 */
 
 ^!c::
