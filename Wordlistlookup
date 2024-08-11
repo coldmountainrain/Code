@@ -1,0 +1,79 @@
+/*
+Requires AHK 2.0
+With wordlist in clipboard, invoke the script via:
+Control + alt + c for cnrtl
+Control + alt + w for Wordreference
+Control + alt + g for Google search.
+Diacritics handled smoothly with the EncodoeDecode functions, the key to it all.
+*/
+
+^!c::
+{
+    wordList := StrSplit(A_Clipboard, "`r`n")
+    for word in wordList
+    {
+        if (word != "")
+        {
+            query := EncodeDecodeURI(word)
+            url := "https://www.cnrtl.fr/definition/" . query
+            Run(url)
+        }
+    }
+}
+^!w::
+{
+    wordList := StrSplit(A_Clipboard, "`r`n")
+    for word in wordList
+    {
+        if (word != "")
+        {
+            query := EncodeDecodeURI(word)
+            url := "https://www.wordreference.com/fren/" . query
+            Run(url)
+        }
+    }
+}
+^!g::
+{
+    wordList := StrSplit(A_Clipboard, "`r`n")
+    for word in wordList
+    {
+        if (word != "")
+        {
+            query := EncodeDecodeURI(word)
+            url := "https://www.google.fr/search?q=%22" . query . "%22"
+            Run(url)
+        }
+    }
+    query := A_Clipboard
+    query := EncodeDecodeURI(query)
+	Run "https://www.google.fr/search?q=%22" . query . "%22"
+}
+EncodeDecodeUR(str, encode := true, component := true)
+{
+    static Doc, JS
+    if !Doc
+    {
+        Doc := ComObject("htmlfile")
+        Doc.write("<meta http-equiv='X-UA-Compatible' content='IE=9'>")
+        JS := Doc.parentWindow
+    }
+    return encode
+        ? component
+            ? JS.encodeURIComponent(str)
+            : JS.encodeURI(str)
+        : component
+            ? JS.decodeURIComponent(str)
+            : JS.decodeURI(str)
+}
+EncodeDecodeURI(str, encode := true, component := true)
+{
+    static Doc, JS
+    Doc := ComObject("htmlfile")
+    Doc.write("<meta http-equiv='X-UA-Compatible' content='IE=9'>")
+    JS := Doc.parentWindow
+    if (encode)
+        return JS.encodeURIComponent(str)
+    else
+        return JS.decodeURIComponent(str)
+}
