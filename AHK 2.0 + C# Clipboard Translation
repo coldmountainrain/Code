@@ -1,0 +1,57 @@
+
+/* AHK 2.0 sample script to call the C# translation function below. */
+numpadadd::               ; traduir français vers l'anglais
+{
+	Send "^c"
+	Clipwait
+	Run "C:\Data\Traduir FR-EN.lnk"
+}
+numpadsub::              ; traduire l'anglais vers le français
+{
+	Send "^c"
+	Clipwait
+	Run "C:\Data\Traduir EN-FR.lnk"
+}
+
+
+--------------------------------------------------------------------------------------
+/*** 
+C# translation script.
+***/
+
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using Google.Cloud.Translation.V2;
+
+public class Program
+{
+    [STAThread]
+    static void Main(string[] args)
+    {
+        string apiKey = "Your_API_Key";
+#if ENGLISH_TO_FRENCH
+        Translate(apiKey, "en", "fr", true); // English to French
+#endif
+
+#if FRENCH_TO_ENGLISH
+        Translate(apiKey, "fr", "en", true); // French to English
+#endif
+    }
+
+    static void Translate(string apiKey, string sourceLanguage, string targetLanguage, bool pasteAfterTranslation)
+    {
+        var languages = new[] { targetLanguage};
+        var c = TranslationClient.CreateFromApiKey(apiKey);
+        var originalText = Clipboard.GetText();
+        var translations = new List<string>();
+        for (int i = 0; i < languages.Length; i++)
+            translations.Add(c.TranslateText(originalText, languages[i], sourceLanguage).TranslatedText);
+        var translatedText = string.Join(Environment.NewLine, translations);
+        Clipboard.SetText(translatedText);
+        if (pasteAfterTranslation)
+        {
+            SendKeys.SendWait("^v"); // Simulate Ctrl+V to paste
+        }
+    }
+}
