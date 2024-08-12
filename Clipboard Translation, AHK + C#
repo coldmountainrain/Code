@@ -1,0 +1,17 @@
+
+/* AHK 2.0 sample script to all the C# translation function below. */
+numpadadd::               ; traduir français vers l'anglais
+{
+	Send "^c"
+	Clipwait
+	Run "C:\Data\Traduir FR-EN.lnk"
+}
+numpadsub::              ; traduire l'anglais vers le français
+{
+	Send "^c"
+	Clipwait
+	Run "C:\Data\Traduir EN-FR.lnk"
+}
+
+
+--------------------------------------------------------------------------------------
