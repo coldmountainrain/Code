@@ -1,7 +1,7 @@
 # Interesting Words Collection
 
 | Word | Definition | Reference |
-|------|------------|-----------|
+|------|---------------------------------------------------------------------------------------------------------------|-----------|
 | orexigenic | Causing increased appetite | https://www.wordsmith.org/words/orexigenic.html |
 | eucatastrophe | Sudden happy turn in a story | https://www.wordsmith.org/words/eucatastrophe.html |
 | aggrate | To please or gratify | https://www.wordsmith.org/words/aggrate.html |
