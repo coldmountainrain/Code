@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">5dbefdeb-6503-409f-942e-5cdc50ebe531</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">5dbefdeb-6503-409f-942e-5cdc50ebe531</dc:identifier>
+        <dc:title>Legrand dictionnaire des mots croisés - 2e édition - Noms propres et noms communs - 600 000 mots</dc:title>
+        <dc:creator opf:file-as="Beaudry, Lise" opf:role="aut">Lise Beaudry</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.24.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2020-12-25T06:00:00+00:00</dc:date>
+        <dc:publisher>Quebecor</dc:publisher>
+        <dc:language>fr</dc:language>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Couverture" href="cover.jpg"/>
+    </guide>
+</package>

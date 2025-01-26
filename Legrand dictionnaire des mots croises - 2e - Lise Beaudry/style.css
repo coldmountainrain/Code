@@ -1,0 +1,325 @@
+.c {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.27em;
+    text-align: left;
+    text-indent: 0
+    }
+.c-division {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.625em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 1em;
+    margin-right: 3%;
+    margin-top: 0.6em;
+    padding-left: 0.1em;
+    text-align: left;
+    text-indent: 0
+    }
+.c1 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.8em;
+    text-align: left;
+    text-indent: 0
+    }
+.c2 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.8em;
+    text-align: left;
+    text-indent: 0
+    }
+.c2-entre-filets {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 6em;
+    margin-top: 1em;
+    padding-bottom: 0;
+    padding-top: 0.2em;
+    text-align: left;
+    text-indent: 0
+    }
+.c3-bold {
+    font-weight: bold;
+    line-height: 1.2
+    }
+.c3-boulet {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 3%;
+    margin-top: 0.3em;
+    padding-left: 0.1em;
+    text-align: left;
+    text-indent: 0.7em
+    }
+.c3-boulet-1er {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 3%;
+    margin-top: 0.3em;
+    text-align: left;
+    text-indent: 0
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
+.calibre1 {
+    height: 100%;
+    width: auto
+    }
+.calibre2 {
+    font-size: 0.9em;
+    line-height: normal;
+    vertical-align: super
+    }
+.calibre3 {
+    display: block;
+    line-height: 1.2
+    }
+.calibre4 {
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-collapse: collapse;
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 0;
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 0;
+    border-spacing: 2px;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 0;
+    display: table;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: left;
+    text-indent: 0;
+    width: auto
+    }
+.calibre5 {
+    display: table-row-group;
+    vertical-align: middle
+    }
+.calibre6 {
+    display: table-row;
+    vertical-align: inherit
+    }
+.calibre7 {
+    background-color: #EDEDED;
+    color: black;
+    display: block;
+    font-family: Verdana, Arial, "Times New Roman", Times, Serif;
+    font-size: 1.29167em;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.33em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.2em;
+    padding-top: 0;
+    text-align: center;
+    text-indent: 0
+    }
+.dedicace-tx {
+    color: black;
+    display: block;
+    font-family: Verdana, Arial, "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.33em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.2em;
+    padding-bottom: 0;
+    padding-left: 10em;
+    padding-top: 5em;
+    text-align: left;
+    text-indent: 0
+    }
+.droite {
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 0;
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 0;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 0;
+    display: table-cell;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    padding-bottom: 1px;
+    padding-left: 1em;
+    padding-right: 1px;
+    padding-top: 1px;
+    text-align: left;
+    vertical-align: top;
+    width: 60%
+    }
+.gauche {
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 0;
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 0;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 0;
+    display: table-cell;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 0.83333em;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    text-align: left;
+    vertical-align: top;
+    width: 40%
+    }
+.generated-style {
+    display: block
+    }
+.images-debut {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: -2.5em;
+    text-align: center;
+    text-indent: 0
+    }
+.n-p {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 6%;
+    text-indent: 0
+    }
+.normal-1er {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+    margin-right: 0;
+    margin-top: 0.3em;
+    text-align: justify;
+    text-indent: -1.5em
+    }
+.thin {
+    color: white;
+    font-size: 0.75em
+    }
+.thin1 {
+    color: white;
+    font-size: 0.83333em
+    }
+.thin2 {
+    color: white;
+    font-size: 0.83333em;
+    line-height: 1.2
+    }
+.thin3 {
+    color: white;
+    font-size: 0.625em
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+
